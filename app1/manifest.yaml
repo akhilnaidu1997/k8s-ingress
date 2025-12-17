@@ -46,11 +46,11 @@ metadata:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:799345568171:certificate/02c2ff74-955f-4073-a814-413f59e1de9e
     alb.ingress.kubernetes.io/scheme: internet-facing
-    ingressClassName: alb
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/group.name: roboshop
     alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
 spec:
+  ingressClassName: alb
   rules:
   - host: "app1.daws86s-akhil.shop"
     http:

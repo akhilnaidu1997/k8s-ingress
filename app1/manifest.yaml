@@ -6,7 +6,6 @@ metadata:
     Project: roboshop
     environment: dev
     app: app1
-  namespace: roboshop
 spec:
   replicas: 4
   selector:
